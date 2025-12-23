@@ -4,7 +4,12 @@
 [![Model: Dream-VL-7B](https://img.shields.io/badge/HuggingFace-Dream--VL--7B-yellow.svg)](https://huggingface.co/Dream-org/Dream-VL-7B)
 [![Model: Dream-VLA-7B](https://img.shields.io/badge/HuggingFace-Dream--VLA--7B-yellow.svg)](https://huggingface.co/Dream-org/Dream-VLA-7B)
 
-![](assets/VLA_mid.gif)
+<div style="text-align: center; margin: 0;">
+  <img src="assets/VLA_mid.gif" alt="VLA" style="
+    max-width: 100%;
+    clip-path: inset(0 1% 0 1%);
+  ">
+</div>
 
 Building on the success of Dream 7B, we introduce Dream-VL and Dream-VLA, open VL and VLA models that fully unlock discrete diffusion’s advantages in **long-horizon planning**, **bidirectional reasoning**, and **parallel action generation** for multimodal tasks.
 
