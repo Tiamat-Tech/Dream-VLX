@@ -2248,7 +2248,8 @@ class DreamVLAForActionPrediction(DreamVLModel):
             discretized_actions = np.clip(discretized_actions - 1, a_min=0, a_max=self.bin_centers.shape[0] - 1)
             normalized_actions = self.bin_centers[discretized_actions]
             normalized_actions = normalized_actions.reshape(-1, pred_action_dim)[:, :action_dim]  # [action_chunk, action_dim]
-            return normalized_actions
+            actions = self._unnormalize_actions(normalized_actions, unnorm_key)
+            return actions
             
         # append action_dim * action_chunk placeholders to the input_ids and labels
         labels = input_ids.clone()
